@@ -82,8 +82,8 @@
 </head>
 <body>
 
-<h1>Enter your name, my love 💕</h1>
-<input type="text" id="username" placeholder="Your Name">
+<h1>enter your name, my love 💕</h1>
+<input type="text" id="username" placeholder="name, please">
 <button onclick="showLove()">click me </button>
 
 <div id="message"></div>
@@ -101,11 +101,11 @@ function showLove() {
     const song = document.getElementById("loveSong");
 
     if (name === "") {
-        messageDiv.innerHTML = "Please enter your name, sweetheart 💞";
+        messageDiv.innerHTML = "please enter your name, sweetheart 💞";
         return;
     }
 
-    messageDiv.innerHTML = `💖 ${name}! You are my sunshine! 💖`;
+    messageDiv.innerHTML = `💖 ${name}! you are always be loved by me, i love you so much, mi amore! 💖`;
 
     // Start music
     song.play().catch(() => {
@@ -116,7 +116,7 @@ function showLove() {
     for (let i = 0; i < 25; i++) {
         const elem = document.createElement("div");
         elem.classList.add(Math.random() > 0.5 ? "heart" : "flower");
-        elem.innerHTML = Math.random() > 0.5 ? "💗" : "🌸";
+        elem.innerHTML = Math.random() > 0.5 ? "💗" : "🌸" :"🎀";
         elem.style.left = Math.random() * 100 + "vw";
         elem.style.animationDuration = (3 + Math.random() * 4) + "s";
         document.body.appendChild(elem);
